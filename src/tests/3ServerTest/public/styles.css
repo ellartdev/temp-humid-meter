@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chart-container, .chart-container2 {
+    position: relative;
+    height: 20vh;
+    width: 40vw;
+}
+
+.charts {
+    display: flex;
+}

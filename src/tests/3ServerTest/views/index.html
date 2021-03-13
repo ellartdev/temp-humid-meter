@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="public/styles.css">
+    </head>
+    <body>
+        <div class="temp-humid">
+            <h1>Temperature and Humidity Meter</h1>
+            <h2>Temperature</h2>
+            <div id="temp"></div>
+            <h2>Humidity</h2>
+            <div id="humid"></div>
+            <input type="button" value="LCD Backlight" onclick="LCDBacklight();">
+        </div>
+        <div class="charts">
+            <div class="chart-container">
+                <canvas id="my-chart"></canvas>
+            </div>
+            <div class="chart-container2">
+                <canvas id="my-chart2"></canvas>
+            </div>
+        </div>
+        <!--
+            Scripting is fun :)
+        -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js" integrity="sha512-v8ng/uGxkge3d1IJuEo6dJP8JViyvms0cly9pnbfRxT6/31c3dRWxIiwGnMSWwZjHKOuY3EVmijs7k1jz/9bLA==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="public/js/tempHumidDataHandler.js"></script>
+        <script src="public/js/chartDataHandler.js"></script>
+    </body>
+</html>
